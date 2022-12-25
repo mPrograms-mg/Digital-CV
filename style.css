@@ -207,6 +207,16 @@ p {
   background: #03a9f4;
 }
 
+#text{
+  margin-left: 46px;
+  text-align:justify;
+}
+
+#text h4{
+  text-transform: uppercase;
+  color: #2a7da2;
+}
+
 @media (max-width: 1000px) {
   .container {
     margin: 10px;
