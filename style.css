@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: -1px;
   padding: 0;
@@ -12,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .container {
@@ -31,6 +33,7 @@ body {
   background: #003147;
   padding: 40px;
 }
+
 .profileText {
   position: relative;
   display: flex;
@@ -56,6 +59,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 .profileText h2 {
   color: #fff;
   margin-top: 15px;
@@ -64,6 +68,7 @@ body {
   font-weight: 600;
   line-height: 1.4em;
 }
+
 .profileText h2 span {
   font-size: 0.9em;
   font-weight: 300;
@@ -73,17 +78,19 @@ body {
   padding: 1px;
   margin-top: 10px;
 }
+
 .title {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
 .contact ul {
   position: relative;
+  font-size: 15px;
 }
 
 .contact ul li {
@@ -102,6 +109,7 @@ body {
 .contact ul li span {
   color: #fff;
   font-weight: 300;
+  /* font-size: 15px; */
 }
 
 .contact ul li a {
@@ -117,10 +125,12 @@ body {
   color: #03a9f4;
   font-weight: 500;
 }
+
 .education h4:nth-child(2) {
   color: #fff;
   font-weight: 500;
 }
+
 .education h4 {
   color: #fff;
   font-weight: 300;
@@ -162,9 +172,11 @@ p {
   flex-direction: row;
   margin: 20px 0;
 }
+
 .about .box .text {
   min-width: 150px;
 }
+
 .about .box .text h5 {
   text-transform: uppercase;
   color: #848c90;
@@ -207,20 +219,91 @@ p {
   background: #03a9f4;
 }
 
-#text{
-  margin-left: 45px;
-  text-align:justify;
+.text {
+  padding: 0 0 0 10px;
 }
 
-#text h4{
+#text h4 {
   text-transform: uppercase;
   color: #2a7da2;
+}
+
+.company {
+  color: #003147;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.grid-item {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.projects {
+  margin-top: 15px;
+}
+
+.box {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #003147;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.language {
+  margin-bottom: 10px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 150px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #03a9f4;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
 
 @media (max-width: 1000px) {
   .container {
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .contact ul li span {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .language ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .language {
+    margin-bottom: 10px;
+  }
+  #myBtn {
+    right: 50px;
+    background-color: #03a9f4;
   }
 }
 
@@ -233,5 +316,9 @@ p {
   }
   .skill .box {
     grid-template-columns: repeat(1 1fr);
+  }
+  .contact ul {
+    position: relative;
+    font-size: 14px;
   }
 }
