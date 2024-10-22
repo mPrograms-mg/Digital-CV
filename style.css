@@ -56,7 +56,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -99,6 +99,7 @@ body {
   margin: 10px 0;
   cursor: pointer;
 }
+
 .contact ul li .icon {
   display: inline-block;
   width: 30px;
@@ -239,6 +240,7 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .grid-item {
   margin-top: 10px;
   margin-left: 10px;
@@ -260,6 +262,7 @@ a {
   position: relative;
   /* color: #fff; */
 }
+
 a::after {
   content: "";
   width: 0%;
@@ -325,11 +328,13 @@ a:hover::after {
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .contact ul li span {
     color: #fff;
     font-weight: 300;
     font-size: 14px;
   }
+
   /* .language ul {
     display: flex;
     justify-content: space-evenly;
@@ -337,6 +342,7 @@ a:hover::after {
   .language {
     margin-bottom: 10px;
   }
+
   #myBtn {
     right: 50px;
     background-color: #03a9f4;
@@ -347,12 +353,15 @@ a:hover::after {
   .about .box {
     flex-direction: column;
   }
+
   .about .box .experience {
     margin-bottom: 5px;
   }
+
   .skill .box {
     grid-template-columns: repeat(1 1fr);
   }
+
   .contact ul {
     position: relative;
     font-size: 14px;
